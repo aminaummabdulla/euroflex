@@ -6,7 +6,7 @@ let gulp = require('gulp'),
  concat = require('gulp-concat'),
  uglify = require('gulp-uglify'),
  cssmin = require('gulp-cssmin');
-
+ 
  gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
          .pipe(sass({outputStyle: 'compressed'}))
@@ -22,7 +22,7 @@ let gulp = require('gulp'),
    return gulp.src([
       'node_modules/normalize.css/normalize.css',
       'node_modules/slick-carousel/slick/slick.css',
-      'node_modules/magnific-popup/dist/magnific-popup.css'
+      'node_modules/magnific-popup/dist/magnific-popup.css',
    ])
    .pipe(concat('libs.min.css'))
    .pipe(cssmin())
@@ -32,7 +32,8 @@ let gulp = require('gulp'),
  gulp.task('script', function(){
    return gulp.src([
       'node_modules/slick-carousel/slick/slick.js',
-      'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+      'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+     
    ])
    .pipe(concat('libs.min.js'))
    .pipe(uglify())

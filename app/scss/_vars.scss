@@ -1,0 +1,17 @@
+$text: #444444;
+
+@mixin f400 {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+@mixin f500 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+@mixin f700 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+
